@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: creta-telegram-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8806980379:AAHQ8FFAMYWF5fS6ELxEMt39VH_rdBDHeHs
+      - key: CHAT_ID
+        value: 8063643675
+    plan: free
